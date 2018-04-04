@@ -29,7 +29,6 @@ module Api
       end
 
       def update
-        debugger
         @plates = set_plate
         if @plates.update(plate_params)
           render json: { status: :success, plates: @plates }, status: :ok
