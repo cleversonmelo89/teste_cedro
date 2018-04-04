@@ -21,7 +21,6 @@ module Api
 
       def create
         @restaurants = Restaurant.new(restaurant_params)
-          debugger
         if @restaurants.save
           render json: @restaurants, status: :created
         else
