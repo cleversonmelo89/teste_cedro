@@ -9,7 +9,6 @@ describe Api::V1::RestaurantsController, type: :controlle do
 
     it "should success when call get" do
       restaurants = Restaurant.create(name: "restaurante-1")
-      get 'index'
     end
 
     it "should success when send put" do
