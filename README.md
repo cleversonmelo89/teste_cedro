@@ -5,20 +5,18 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 2.4.4
 
 * System dependencies
 
-* Configuration
+  gem 'rails', '~> 5.1.6'
+  gem 'puma', '~> 3.7'
+  gem 'mongoid', '~> 7.0'
+  gem 'json', '~> 2.1'
+  gem 'rspec', '~> 3.7'
+
+* Database MongoDB
 
 * Database creation
+  rake db:seed
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
