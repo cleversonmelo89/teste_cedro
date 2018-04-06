@@ -10,6 +10,7 @@ gem 'rails', '~> 5.1.6'
 gem 'puma', '~> 3.7'
 gem 'mongoid', '~> 7.0'
 gem 'json', '~> 2.1'
+gem 'rspec', '~> 3.7'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

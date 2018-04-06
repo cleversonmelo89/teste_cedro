@@ -3,6 +3,7 @@ module Api
     class RestaurantsController < ApplicationController
 
       def index
+        debugger
         @restaurants = Restaurant.all
         render json: { status: :success, restaurants: @restaurants, total: @restaurants.count }, status: :ok
       end
@@ -20,6 +21,7 @@ module Api
       end
 
       def create
+        debugger
         @restaurants = Restaurant.new(restaurant_params)
         if @restaurants.save
           render json: @restaurants, status: :created
